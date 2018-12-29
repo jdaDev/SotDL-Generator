@@ -12,13 +12,32 @@ var humanBackgrounds = [
     'You fell in love and the relationship ended well or is ongoing.',
     'You have a spouse and 1d6 - 2 children (minimum 0).',
     'You traveled extensively. you speak one additional language.',
-    'You received an eductation. You know how to read the Common Tongue.',
+    'You received an education. You know how to read the Common Tongue.',
     'You saved your town from terrible monsters.',
     'You foiled a plot to kill someone important or you brought a killer to justice.',
     'You performed a great deed and are a hero to the people of your hometown.',
     'You found an old treasure map.',
     'Someone important and powerful owes you a favor.',
-    'You came into money and start tje game with 2d6 cp.'
+    'You came into money and start the game with 2d6 cp.'
+]
+
+var humanPersonalities = [
+    'You are cruel, wicked, and self-serving. You enjoy making others suffer.',
+    'You are erratic and unpredictable. You have a hard time keeping your word and tend toward capricious behavior.',
+    'Might makes right. Obedience to authority is the highest ideal.',
+    'Might makes right. Obedience to authority is the highest ideal.',
+    'You look after yourself first and foremost. You are not above double-crossing friends.',
+    'You look after yourself first and foremost. You are not above double-crossing friends.',
+    'You put your interests and those of your friends above all else.',
+    'You put your interests and those of your friends above all else.',
+    'You put your interests and those of your friends above all else.',
+    'You put your interests and those of your friends above all else.',
+    'You help others because it is the right thing to do.',
+    'You help others because it is the right thing to do.',
+    'You try to do what you think is right, even if it breaks laws and social conventions.',
+    'You try to do what you think is right, even if it breaks laws and social conventions.',
+    'Your honor and duty guide everything you do.',
+    'You are committed to good and noble causes, and you never stray from your beliefs even if your insistence would cost you your life.'
 ]
 
 function newBackground(){
@@ -29,7 +48,8 @@ function newBackground(){
 }
 
 function newPersonality(){
-
+    var randomNumber = Math.floor(Math.random() * (humanPersonalities.length));
+    document.getElementById('personalityDisplay').innerHTML = humanPersonalities[randomNumber];
 }
 
 function newReligion(){
@@ -45,5 +65,5 @@ function newBuild(){
 }
 
 function newAppearance(){
-    
+
 }

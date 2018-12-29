@@ -40,7 +40,7 @@ var humanPersonalities = [
     'You are committed to good and noble causes, and you never stray from your beliefs even if your insistence would cost you your life.'
 ]
 
-var humanReligion = [
+var humanReligions = [
     'You belong to a cult dedicated to a dark power.',
     'You belong to a heretical sect.',
     'You were raised in the teachings of witchcraft.',
@@ -59,7 +59,7 @@ var humanReligion = [
     'You have no religion.',
 ]
 
-var humanAge = [
+var humanAges = [
     'You are a child, 11 years old or younger.',
     'You are an adolescent, 12 to 17 years old.',
     'You are an adolescent, 12 to 17 years old.',
@@ -78,7 +78,7 @@ var humanAge = [
     'You are a venerable adult, 76 years old or older.'
 ]
 
-var humanBuild = [
+var humanBuilds = [
     'You are short and thin.',
     'You are short and heavy.',
     'You are short.',
@@ -97,10 +97,23 @@ var humanBuild = [
     'You are very tall and heavy.'
 ]
 
-var humanAppearance = [
+var humanAppearances = [
     'You are hideous. You look like a monster. Children cry when they encounter you, the weak of heart faint when they see you, and one person vomited after getting a good look at your face.',
     'You are ugly, and people find your visage unpleasant thanks to a scar, wen, beetling brows, boils, piles, a wandering or weeping eye, or something else of a similar magnitude.',
-    
+    'Most consider you homely: not quite ugly, but a bit worse than plain.',
+    'Most consider you homely: not quite ugly, but a bit worse than plain.',
+    'You are plain and uninteresting to look upon. People notice you, but your appearance fails to make an impression.',
+    'You are plain and uninteresting to look upon. People notice you, but your appearance fails to make an impression.',
+    'You are perfectly average in appearance. You look like everyone else.',
+    'You are perfectly average in appearance. You look like everyone else.',
+    'You are perfectly average in appearance. You look like everyone else.',
+    'You are perfectly average in appearance. You look like everyone else.',
+    'You have a physical quality that makes you attractive to others. You might have pretty eyes, lips, hair, shape, or something else.',
+    'You have a physical quality that makes you attractive to others. You might have pretty eyes, lips, hair, shape, or something else.',
+    'You have several attractive physical qualities that make you quite comely.',
+    'You have several attractive physical qualities that make you quite comely.',
+    'You are one of the great beauties in the land, an individual of almost unsurpassed form and appearance. People notice you.',
+    'You put beautiful people to shame. You are so striking, heads turn to follow you wherever you go. People become infatuated with you, stumbling over their words and feeling flustered when you show them attention. There’s a fine line between love and hate. Should you spurn the attentions of people you enamor, their affection might sour to resentment and even hatred.'
 ]
 
 function newBackground(){
@@ -116,17 +129,21 @@ function newPersonality(){
 }
 
 function newReligion(){
-
+    var randomNumber = Math.floor(Math.random() * (humanReligions.length));
+    document.getElementById('religionDisplay').innerHTML = humanReligions[randomNumber];
 }
 
 function newAge(){
-
+    var randomNumber = Math.floor(Math.random() * (humanAges.length));
+    document.getElementById('ageDisplay').innerHTML = humanAges[randomNumber];
 }
 
 function newBuild(){
-
+    var randomNumber = Math.floor(Math.random() * (humanBuilds.length));
+    document.getElementById('buildDisplay').innerHTML = humanBuilds[randomNumber];
 }
 
 function newAppearance(){
-
+    var randomNumber = Math.floor(Math.random() * (humanAppearances.length));
+    document.getElementById('appearanceDisplay').innerHTML = humanAppearances[randomNumber];
 }

@@ -40,6 +40,69 @@ var humanPersonalities = [
     'You are committed to good and noble causes, and you never stray from your beliefs even if your insistence would cost you your life.'
 ]
 
+var humanReligion = [
+    'You belong to a cult dedicated to a dark power.',
+    'You belong to a heretical sect.',
+    'You were raised in the teachings of witchcraft.',
+    'You were raised in the teachings of witchcraft.',
+    'You follow the tenets of the Old Faith.',
+    'You follow the tenets of the Old Faith.',
+    'You follow the tenets of the Old Faith.',
+    'You follow the tenets of the Old Faith.',
+    'You belong to the Cult of the New God.',
+    'You belong to the Cult of the New God.',
+    'You belong to the Cult of the New God.',
+    'You belong to the Cult of the New God.',
+    'You belong to the Cult of the New God.',
+    'You have no religion.',
+    'You have no religion.',
+    'You have no religion.',
+]
+
+var humanAge = [
+    'You are a child, 11 years old or younger.',
+    'You are an adolescent, 12 to 17 years old.',
+    'You are an adolescent, 12 to 17 years old.',
+    'You are an adolescent, 12 to 17 years old.',
+    'You are an adolescent, 12 to 17 years old.',
+    'You are a young adult, 18 to 35 years old.',
+    'You are a young adult, 18 to 35 years old.',
+    'You are a young adult, 18 to 35 years old.',
+    'You are a young adult, 18 to 35 years old.',
+    'You are a young adult, 18 to 35 years old.',
+    'You are a middle-aged adult, 36 to 55 years old.',
+    'You are a middle-aged adult, 36 to 55 years old.',
+    'You are a middle-aged adult, 36 to 55 years old.',
+    'You are an older adult, 56 to 75 years old.',
+    'You are an older adult, 56 to 75 years old.',
+    'You are a venerable adult, 76 years old or older.'
+]
+
+var humanBuild = [
+    'You are short and thin.',
+    'You are short and heavy.',
+    'You are short.',
+    'You are short.',
+    'You are slender.',
+    'You are slender.',
+    'You are average in height and weight.',
+    'You are average in height and weight.',
+    'You are average in height and weight.',
+    'You are average in height and weight.',
+    'You are a bit overweight.',
+    'You are a bit overweight.',
+    'You are tall.',
+    'You are tall.',
+    'You are tall and thin.',
+    'You are very tall and heavy.'
+]
+
+var humanAppearance = [
+    'You are hideous. You look like a monster. Children cry when they encounter you, the weak of heart faint when they see you, and one person vomited after getting a good look at your face.',
+    'You are ugly, and people find your visage unpleasant thanks to a scar, wen, beetling brows, boils, piles, a wandering or weeping eye, or something else of a similar magnitude.',
+    
+]
+
 function newBackground(){
     // TO-DO -> Add if statements checking which ancestry is selected, then
     // do the following for the appropriate array and length.

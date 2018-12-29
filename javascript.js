@@ -20,3 +20,30 @@ var humanBackgrounds = [
     'Someone important and powerful owes you a favor.',
     'You came into money and start tje game with 2d6 cp.'
 ]
+
+function newBackground(){
+    // TO-DO -> Add if statements checking which ancestry is selected, then
+    // do the following for the appropriate array and length.
+    var randomNumber = Math.floor(Math.random() * (humanBackgrounds.length));
+    document.getElementById('backgroundDisplay').innerHTML = humanBackgrounds[randomNumber];
+}
+
+function newPersonality(){
+
+}
+
+function newReligion(){
+
+}
+
+function newAge(){
+
+}
+
+function newBuild(){
+
+}
+
+function newAppearance(){
+    
+}

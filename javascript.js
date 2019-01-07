@@ -147,3 +147,49 @@ function newAppearance(){
     var randomNumber = Math.floor(Math.random() * (humanAppearances.length));
     document.getElementById('appearanceDisplay').innerHTML = humanAppearances[randomNumber];
 }
+
+
+/**
+ * Functions for complete character
+ */
+function completeBackground(){
+    // TO-DO -> Add if statements checking which ancestry is selected, then
+    // do the following for the appropriate array and length.
+    var randomNumber = Math.floor(Math.random() * (humanBackgrounds.length));
+    document.getElementById('characterDisplay').innerHTML = humanBackgrounds[randomNumber];
+}
+
+function completePersonality(){
+    var randomNumber = Math.floor(Math.random() * (humanPersonalities.length));
+    document.getElementById('characterDisplay').innerHTML = humanPersonalities[randomNumber];
+}
+
+function completeReligion(){
+    var randomNumber = Math.floor(Math.random() * (humanReligions.length));
+    document.getElementById('characterDisplay').innerHTML = humanReligions[randomNumber];
+}
+
+function completeAge(){
+    var randomNumber = Math.floor(Math.random() * (humanAges.length));
+    document.getElementById('characterDisplay').innerHTML = humanAges[randomNumber];
+}
+
+function completeBuild(){
+    var randomNumber = Math.floor(Math.random() * (humanBuilds.length));
+    document.getElementById('characterDisplay').innerHTML = humanBuilds[randomNumber];
+}
+
+function completeAppearance(){
+    var randomNumber = Math.floor(Math.random() * (humanAppearances.length));
+    document.getElementById('characterDisplay').innerHTML = humanAppearances[randomNumber];
+}
+
+/**
+ * Function to create a complete character with the click of a button.
+ */
+function createCompleteCharacter(){
+    //var randomNumberD6 = Math.floor(Math.random() * (16));
+    //var randomNumberD20 = Math.floor(Math.random() * (20));
+
+    completeBackground();
+}

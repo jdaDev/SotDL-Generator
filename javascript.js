@@ -184,6 +184,29 @@ function completeAppearance(){
     document.getElementById('characterDisplay').innerHTML = humanAppearances[randomNumber];
 }
 
+function rolld6(){
+    var randomNumber = Math.floor(Math.random() * (6));
+    return randomNumber;
+}
+
+function roll2d6(){
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    return firstRoll + secondRoll;
+}
+
+function roll3d6(){
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    var thirdRoll = rolld6();
+    return firstRoll + secondRoll + thirdRoll;
+}
+
+function rolld20(){
+    var randomNumber = Math.floor(Math.random() * (20));
+    return randomNumber;
+}
+
 /**
  * Function to create a complete character with the click of a button.
  */

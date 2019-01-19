@@ -122,49 +122,10 @@ var humanAppearances =
     'You put beautiful people to shame. You are so striking, heads turn to follow you wherever you go. People become infatuated with you, stumbling over their words and feeling flustered when you show them attention. There\'s a fine line between love and hate. Should you spurn the attentions of people you enamor, their affection might sour to resentment and even hatred.'
 ]
 
-function newBackground()
-{
-    // TO-DO -> Add if statements checking which ancestry is selected, then
-    // do the following for the appropriate array and length.
-    var randomNumber = Math.floor(Math.random() * (humanBackgrounds.length));
-    document.getElementById('backgroundDisplay').innerHTML = humanBackgrounds[randomNumber];
-}
-
-function newPersonality()
-{
-    var randomNumber = Math.floor(Math.random() * (humanPersonalities.length));
-    document.getElementById('personalityDisplay').innerHTML = humanPersonalities[randomNumber];
-}
-
-function newReligion()
-{
-    var randomNumber = Math.floor(Math.random() * (humanReligions.length));
-    document.getElementById('religionDisplay').innerHTML = humanReligions[randomNumber];
-}
-
-function newAge()
-{
-    var randomNumber = Math.floor(Math.random() * (humanAges.length));
-    document.getElementById('ageDisplay').innerHTML = humanAges[randomNumber];
-}
-
-function newBuild()
-{
-    var randomNumber = Math.floor(Math.random() * (humanBuilds.length));
-    document.getElementById('buildDisplay').innerHTML = humanBuilds[randomNumber];
-}
-
-function newAppearance()
-{
-    var randomNumber = Math.floor(Math.random() * (humanAppearances.length));
-    document.getElementById('appearanceDisplay').innerHTML = humanAppearances[randomNumber];
-}
-
-
 /**
- * Functions for complete character
+ * Functions for complete human character
  */
-function completeBackground()
+function getHumanBackground()
 {
     // TO-DO -> Add if statements checking which ancestry is selected, then
     // do the following for the appropriate array and length.
@@ -172,31 +133,31 @@ function completeBackground()
     document.getElementById('completeBackgroundDisplay').innerHTML = humanBackgrounds[randomNumber];
 }
 
-function completePersonality()
+function getHumanPersonality()
 {
     var randomNumber = Math.floor(Math.random() * (humanPersonalities.length));
     document.getElementById('completePersonalityDisplay').innerHTML = humanPersonalities[randomNumber];
 }
 
-function completeReligion()
+function getHumanReligion()
 {
     var randomNumber = Math.floor(Math.random() * (humanReligions.length));
     document.getElementById('completeReligionDisplay').innerHTML = humanReligions[randomNumber];
 }
 
-function completeAge()
+function getHumanAge()
 {
     var randomNumber = Math.floor(Math.random() * (humanAges.length));
     document.getElementById('completeAgeDisplay').innerHTML = humanAges[randomNumber];
 }
 
-function completeBuild()
+function getHumanBuild()
 {
     var randomNumber = Math.floor(Math.random() * (humanBuilds.length));
     document.getElementById('completeBuildDisplay').innerHTML = humanBuilds[randomNumber];
 }
 
-function completeAppearance()
+function getHumanAppearance()
 {
     var randomNumber = Math.floor(Math.random() * (humanAppearances.length));
     document.getElementById('completeAppearanceDisplay').innerHTML = humanAppearances[randomNumber];
@@ -234,10 +195,52 @@ function rolld20()
  */
 function createCompleteCharacter()
 {
-    completeBackground();
-    completePersonality();
-    completeReligion();
-    completeAge();
-    completeBuild();
-    completeAppearance();
+    getHumanBackground();
+    getHumanPersonality();
+    getHumanReligion();
+    getHumanAge();
+    getHumanBuild();
+    getHumanAppearance();
 }
+
+
+
+// Code not needed
+
+/* function newBackground()
+{
+    // TO-DO -> Add if statements checking which ancestry is selected, then
+    // do the following for the appropriate array and length.
+    var randomNumber = Math.floor(Math.random() * (humanBackgrounds.length));
+    document.getElementById('backgroundDisplay').innerHTML = humanBackgrounds[randomNumber];
+}
+
+function newPersonality()
+{
+    var randomNumber = Math.floor(Math.random() * (humanPersonalities.length));
+    document.getElementById('personalityDisplay').innerHTML = humanPersonalities[randomNumber];
+}
+
+function newReligion()
+{
+    var randomNumber = Math.floor(Math.random() * (humanReligions.length));
+    document.getElementById('religionDisplay').innerHTML = humanReligions[randomNumber];
+}
+
+function newAge()
+{
+    var randomNumber = Math.floor(Math.random() * (humanAges.length));
+    document.getElementById('ageDisplay').innerHTML = humanAges[randomNumber];
+}
+
+function newBuild()
+{
+    var randomNumber = Math.floor(Math.random() * (humanBuilds.length));
+    document.getElementById('buildDisplay').innerHTML = humanBuilds[randomNumber];
+}
+
+function newAppearance()
+{
+    var randomNumber = Math.floor(Math.random() * (humanAppearances.length));
+    document.getElementById('appearanceDisplay').innerHTML = humanAppearances[randomNumber];
+} */

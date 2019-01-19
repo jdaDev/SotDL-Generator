@@ -1,3 +1,26 @@
+/**
+ * Human Statistics and Abilities
+ */
+var humanStrength = 10;
+var humanAgility = 10;
+var humanIntellect = 10;
+var humanWill = 10;
+var humanPerception = humanIntellect;
+var humanDefense = humanAgility;
+var humanHealth = humanStrength;
+var humanHealingRate = Math.floor(humanHealth / 4); // healing rate is 1/4 of health.
+var humanSize = '1/2 or 1';
+var humanSpeed = 10;
+var humanPower = 0;
+var humanDamage = 0;
+var humanInsanity = 0;
+var humanCorruption = 0;
+var humanLanguagesAndProfessions = 'You speak Common Tongue + one additional language or add a random profession.';
+
+
+/**
+ * Human Tables
+ */
 var humanBackgrounds = 
 [
     'You died and returned to life. You start the game with ' + rolld6().toString() + ' insanity.', // 1

@@ -118,8 +118,8 @@ var changlingTrueAge =
     'You are careful about the forms you take. You try to stay out of trouble and keep secrets safe.',
     'You are careful about the forms you take. You try to stay out of trouble and keep secrets safe.',
     'You strive to do the right thing and use your disguises to help other people, as well as to protect yourself from your enemies.',
-    'Your nature is a gift, and you use it to do what you think is right even if it means upsetting other along the way.',
-    'Your nature is a gift, and you use it to do what you think is right even if it means upsetting other along the way.',
+    'Your nature is a gift, and you use it to do what you think is right even if it means upsetting others along the way.',
+    'Your nature is a gift, and you use it to do what you think is right even if it means upsetting others along the way.',
     'You tend to stick to one form as long as possible; you crave stability and would do anything to be "normal"',
     'You use your talents to help others, to make the world a better place, and to right wrongs.'
   ]

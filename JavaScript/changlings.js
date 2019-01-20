@@ -128,7 +128,7 @@ var changlingTrueAge =
   /**
    * Changling Functions
    */
-  function getChanglingBackground()
+function getChanglingBackground()
 {
     // TO-DO -> Add if statements checking which ancestry is selected, then
     // do the following for the appropriate array and length.

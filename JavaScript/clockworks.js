@@ -21,29 +21,29 @@ var clockworkAge =
     'You are ancient, more than 150 years old.'
   ]
   
-  var clockworkPurpose = 
-  [
-    'You were built for war. Increase your Strength or Agility by 2.',
-    'You were built for war. Increase your Strength or Agility by 2.',
-    'You were built for war. Increase your Strength or Agility by 2.',
-    'You were built for war. Increase your strength or Agility by 2.',
-    'You were built to work. Increase your Strength by 2.',
-    'You were built to work. Increase your Strength by 2.',
-    'You were built to work. Increase your Strength by 2.',
-    'You were built to work. Increase your Strength by 2.',
-    'You were built to use magic. Increase your Intellect or Will by 2.',
-    'You were built to use magic. Increase your Intellect or Will by 2.',
-    'You were built to use magic. Increase your Intellect or Will by 2.',
-    'You were built to use magic. Increase your Intellect or Will by 2.',
-    'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
-    'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
-    'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
-    'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
-    'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.',
-    'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.',
-    'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.',
-    'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.'
-  ]
+var clockworkPurpose = 
+[
+  'You were built for war. Increase your Strength or Agility by 2.',
+  'You were built for war. Increase your Strength or Agility by 2.',
+  'You were built for war. Increase your Strength or Agility by 2.',
+  'You were built for war. Increase your strength or Agility by 2.',
+  'You were built to work. Increase your Strength by 2.',
+  'You were built to work. Increase your Strength by 2.',
+  'You were built to work. Increase your Strength by 2.',
+  'You were built to work. Increase your Strength by 2.',
+  'You were built to use magic. Increase your Intellect or Will by 2.',
+  'You were built to use magic. Increase your Intellect or Will by 2.',
+  'You were built to use magic. Increase your Intellect or Will by 2.',
+  'You were built to use magic. Increase your Intellect or Will by 2.',
+  'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
+  'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
+  'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
+  'You were built to gather intelligence about or assassinate targets. Increase your Agility or Intellect by 2.',
+  'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.',
+  'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.',
+  'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.',
+  'You were built for an inexplicable purpose. Increase one attribute of your choice by 2.'
+]
   
   var clockworkForm = 
   [
@@ -82,7 +82,7 @@ var clockworkAge =
     'You have a mere suggestion of facial features.',
     'You have a mere suggestion of facial features.',
     'You appear well made and in good working condition.',
-    'You appear well made and in godo working condition.',
+    'You appear well made and in good working condition.',
     'You have a stylized and ornate body.',
     'You have a stylized and ornate body.',
     'You have an ornate body festooned with etchings and ornamental jewels.',
@@ -134,3 +134,97 @@ var clockworkAge =
     'You obey the instructions of anyone you deem to be an authority.',
     'Your maker gave you three commandments and you must obey them.'
   ]
+
+
+/**
+* Clockwork Functions
+*/
+function getClockworkAge()
+{
+    // TO-DO -> Add if statements checking which ancestry is selected, then
+    // do the following for the appropriate array and length.
+    var randomNumber = Math.floor(Math.random() * (clockworkAge.length));
+    document.getElementById('clockworkAgeDisplay').innerHTML = clockworkAge[randomNumber];
+}
+
+function getClockworkPurpose()
+{
+    var randomNumber = Math.floor(Math.random() * (clockworkPurpose.length));
+    document.getElementById('clockworkPurposeDisplay').innerHTML = clockworkPurpose[randomNumber];
+}
+
+function getClockworkForm()
+{
+    var randomNumber = Math.floor(Math.random() * (clockworkForm.length));
+    document.getElementById('clockworkFormDisplay').innerHTML = clockworkForm[randomNumber];
+}
+
+function getClockworkAppearance()
+{
+    var randomNumber = Math.floor(Math.random() * (clockworkAppearance.length));
+    document.getElementById('clockworkAppearanceDisplay').innerHTML = clockworkAppearance[randomNumber];
+}
+
+function getClockworkBackground()
+{
+    var randomNumber = Math.floor(Math.random() * (clockworkBackground.length));
+    document.getElementById('clockworkBackgroundDisplay').innerHTML = clockworkBackground[randomNumber];
+}
+
+function getClockworkPersonality()
+{
+    var randomNumber = Math.floor(Math.random() * (clockworkPersonality.length));
+    document.getElementById('clockworkPersonalityDisplay').innerHTML = clockworkPersonality[randomNumber];
+}
+
+/**
+ * Function to simulate rolling a d6 die.
+ */
+function rolld6()
+{
+    var randomNumber = Math.floor(Math.random() * (6));
+    return randomNumber;
+}
+
+/**
+ * Function to simulate rolling 2d6 dice.
+ */
+function roll2d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    return firstRoll + secondRoll;
+}
+
+/**
+ * Function to simulate rolling 3d6 dice.
+ */
+function roll3d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    var thirdRoll = rolld6();
+    return firstRoll + secondRoll + thirdRoll;
+}
+
+/**
+ * Function to simulate rolling a d20 die.
+ */
+function rolld20()
+{
+    var randomNumber = Math.floor(Math.random() * (20));
+    return randomNumber;
+}
+
+/**
+ * Function to create a complete character with the click of a button.
+ */
+function createCompleteClockworkCharacter()
+{
+    getClockworkAge();
+    getClockworkPurpose();
+    getClockworkForm();
+    getClockworkAppearance();
+    getClockworkBackground();
+    getClockworkPersonality();
+}

@@ -70,7 +70,7 @@ var changlingTrueAge =
     'After you were exiled from your hometown, a druid or witch took you in and cared for you. You always have a home with this character.',
     'You worked as an informant for the Inquisition.',
     'You received an education. You know how to read the Common Tongue.',
-    'You learned a terrible secret while masquerading as someone else. Work out the nature of that ecret with your Game Master.',
+    'You learned a terrible secret while masquerading as someone else. Work out the nature of that secret with your Game Master.',
     'Your parents raised you even though they knew what you were. Their love and encouragement gave you the stability you needed to grow into a mature ' +
     'personality.',
     'The elf who made you recently found you and befriended you. You can call in one favor from that elf by speaking into a shell he or she gave you. ' +

@@ -94,7 +94,7 @@ var clockworkPurpose =
   [
     'Your soul came from Hell. Start the game with 1d3 Corruption.',
     'Your soul was plucked from the Underworld before it could forget its former life. Start the game with 1d6 Insanity and add an extra profession.',
-    'You spent 1d20 years in a formant state.',
+    'You spent 1d20 years in a dormant state.',
     'Your maker treated you poorly. You escaped and now fear your maker will find you.',
     'Fire, plague, or monsters destroyed your home and you are the sole survivor.',
     'You were stolen from the workshop where you were made and lived as a slave for 1d6 years.',

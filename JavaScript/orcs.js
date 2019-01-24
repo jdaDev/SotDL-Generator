@@ -103,4 +103,90 @@ var orcAge = [
     'You believe you were made for a reason. Without your chains, you have no purpose.',
     'You believe your people have committed great acts of evil in the Empire\'s name. You strive to right the wrongs.'
   ]
+
+/**
+* Orc Functions
+*/
+function getOrcAge()
+{
+    // TO-DO -> Add if statements checking which ancestry is selected, then
+    // do the following for the appropriate array and length.
+    var randomNumber = Math.floor(Math.random() * (orcAge.length));
+    document.getElementById('orcAgeDisplay').innerHTML = orcAge[randomNumber];
+}
+
+function getOrcBuild()
+{
+    var randomNumber = Math.floor(Math.random() * (orcBuild.length));
+    document.getElementById('orcBuildDisplay').innerHTML = orcBuild[randomNumber];
+}
+
+function getOrcAppearance()
+{
+    var randomNumber = Math.floor(Math.random() * (orcAppearance.length));
+    document.getElementById('orcAppearanceDisplay').innerHTML = orcAppearance[randomNumber];
+}
+
+function getOrcBackground()
+{
+    var randomNumber = Math.floor(Math.random() * (orcBackground.length));
+    document.getElementById('orcBackgroundDisplay').innerHTML = orcBackground[randomNumber];
+}
+
+function getOrcPersonality()
+{
+    var randomNumber = Math.floor(Math.random() * (orcPersonality.length));
+    document.getElementById('orcPersonalityDisplay').innerHTML = orcPersonality[randomNumber];
+}
+
+/**
+ * Function to simulate rolling a d6 die.
+ */
+function rolld6()
+{
+    var randomNumber = Math.floor(Math.random() * (6));
+    return randomNumber;
+}
+
+/**
+ * Function to simulate rolling 2d6 dice.
+ */
+function roll2d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    return firstRoll + secondRoll;
+}
+
+/**
+ * Function to simulate rolling 3d6 dice.
+ */
+function roll3d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    var thirdRoll = rolld6();
+    return firstRoll + secondRoll + thirdRoll;
+}
+
+/**
+ * Function to simulate rolling a d20 die.
+ */
+function rolld20()
+{
+    var randomNumber = Math.floor(Math.random() * (20));
+    return randomNumber;
+}
+
+/**
+ * Function to create a complete character with the click of a button.
+ */
+function createCompleteOrcCharacter()
+{
+    getOrcAge();
+    getOrcBuild();
+    getOrcAppearance();
+    getOrcBackground();
+    getOrcPersonality();
+}
   

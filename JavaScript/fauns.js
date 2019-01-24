@@ -31,8 +31,8 @@ var faunAge = [
     'You have a typical height and weight for a faun.',
     'You have a typical height and weight for a faun.',
     'You have a typical height and weight for a faun.',
-    'You are hearvy, unusually curvaceous or plump.',
-    'You are hearvy, unusually curvaceous or plump.',
+    'You are heavy, unusually curvaceous or plump.',
+    'You are heavy, unusually curvaceous or plump.',
     'You stand a full foot taller than other fauns.',
     'You stand a full foot taller than other fauns.',
     'You are tall and gaunt.',
@@ -101,3 +101,89 @@ var faunAge = [
     'You put your best foot forward. If you can prove your heart is good, maybe others will give you a chance.',
     'You were born for a reason, to accomplish some great task, to fulfill a great purpose. You hope to find your destiny and do what you were meant to do.'
   ]
+
+/**
+* Faun Functions
+*/
+function getFaunAge()
+{
+    // TO-DO -> Add if statements checking which ancestry is selected, then
+    // do the following for the appropriate array and length.
+    var randomNumber = Math.floor(Math.random() * (faunAge.length));
+    document.getElementById('faunAgeDisplay').innerHTML = faunAge[randomNumber];
+}
+
+function getFaunBuild()
+{
+    var randomNumber = Math.floor(Math.random() * (faunBuild.length));
+    document.getElementById('faunBuildDisplay').innerHTML = faunBuild[randomNumber];
+}
+
+function getFaunAppearance()
+{
+    var randomNumber = Math.floor(Math.random() * (faunAppearance.length));
+    document.getElementById('faunAppearanceDisplay').innerHTML = faunAppearance[randomNumber];
+}
+
+function getFaunBackground()
+{
+    var randomNumber = Math.floor(Math.random() * (faunBackground.length));
+    document.getElementById('faunBackgroundDisplay').innerHTML = faunBackground[randomNumber];
+}
+
+function getFaunPersonality()
+{
+    var randomNumber = Math.floor(Math.random() * (faunPersonality.length));
+    document.getElementById('faunPersonalityDisplay').innerHTML = faunPersonality[randomNumber];
+}
+
+/**
+ * Function to simulate rolling a d6 die.
+ */
+function rolld6()
+{
+    var randomNumber = Math.floor(Math.random() * (6));
+    return randomNumber;
+}
+
+/**
+ * Function to simulate rolling 2d6 dice.
+ */
+function roll2d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    return firstRoll + secondRoll;
+}
+
+/**
+ * Function to simulate rolling 3d6 dice.
+ */
+function roll3d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    var thirdRoll = rolld6();
+    return firstRoll + secondRoll + thirdRoll;
+}
+
+/**
+ * Function to simulate rolling a d20 die.
+ */
+function rolld20()
+{
+    var randomNumber = Math.floor(Math.random() * (20));
+    return randomNumber;
+}
+
+/**
+ * Function to create a complete character with the click of a button.
+ */
+function createCompleteFaunCharacter()
+{
+    getFaunAge();
+    getFaunBuild();
+    getFaunAppearance();
+    getFaunBackground();
+    getFaunPersonality();
+}

@@ -119,3 +119,97 @@ var halflingAge = [
     'You always do what you think is right, even if doing so gets you into trouble.',
     'You are concerned about what others think of you and alter your behavior to make others like you.'
   ]
+
+
+/**
+* Halfling Functions
+*/
+function getHalflingAge()
+{
+    // TO-DO -> Add if statements checking which ancestry is selected, then
+    // do the following for the appropriate array and length.
+    var randomNumber = Math.floor(Math.random() * (halflingAge.length));
+    document.getElementById('halflingAgeDisplay').innerHTML = halflingAge[randomNumber];
+}
+
+function getHalflingBuild()
+{
+    var randomNumber = Math.floor(Math.random() * (halflingBuild.length));
+    document.getElementById('halflingBuildDisplay').innerHTML = halflingBuild[randomNumber];
+}
+
+function getHalflingAppearance()
+{
+    var randomNumber = Math.floor(Math.random() * (halflingAppearance.length));
+    document.getElementById('halflingAppearanceDisplay').innerHTML = halflingAppearance[randomNumber];
+}
+
+function getHalflingBackground()
+{
+    var randomNumber = Math.floor(Math.random() * (halflingBackground.length));
+    document.getElementById('halflingBackgroundDisplay').innerHTML = halflingBackground[randomNumber];
+}
+
+function getHalflingReligion()
+{
+  var randomNumber = Math.floor(Math.random() * (halflingReligion.length));
+  document.getElementById('halflingReligionDisplay').innerHTML = halflingReligion[randomNumber];
+}
+
+function getHalflingPersonality()
+{
+    var randomNumber = Math.floor(Math.random() * (halflingPersonality.length));
+    document.getElementById('halflingPersonalityDisplay').innerHTML = halflingPersonality[randomNumber];
+}
+
+/**
+ * Function to simulate rolling a d6 die.
+ */
+function rolld6()
+{
+    var randomNumber = Math.floor(Math.random() * (6));
+    return randomNumber;
+}
+
+/**
+ * Function to simulate rolling 2d6 dice.
+ */
+function roll2d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    return firstRoll + secondRoll;
+}
+
+/**
+ * Function to simulate rolling 3d6 dice.
+ */
+function roll3d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    var thirdRoll = rolld6();
+    return firstRoll + secondRoll + thirdRoll;
+}
+
+/**
+ * Function to simulate rolling a d20 die.
+ */
+function rolld20()
+{
+    var randomNumber = Math.floor(Math.random() * (20));
+    return randomNumber;
+}
+
+/**
+ * Function to create a complete character with the click of a button.
+ */
+function createCompleteHalflingCharacter()
+{
+    getHalflingAge();
+    getHalflingBuild();
+    getHalflingAppearance();
+    getHalflingBackground();
+    getHalflingReligion();
+    getHalflingPersonality();
+}

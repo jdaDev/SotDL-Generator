@@ -2,9 +2,17 @@
 <html>
     <head>
         <title>SotDL Generator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>Shadow of the Demon Lord Character Generator</h1>
+        <div class="jumbotron text-center">
+            <h1>Shadow of the Demon Lord Character Generator</h1>
+            <h2>Choose Ancestry</h2>
+        </div>
 
         <!--Reset Button-->
         <div>
@@ -14,30 +22,37 @@
         <!--For spacing-->
         <div><p></p></div>
 
-        <!--Complete Human character creation-->
-        <div>
-            <button onclick="createCompleteHumanCharacter()">Generate Human</button>          
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!--Complete Human character creation-->
+                    <div>
+                        <button onclick="createCompleteHumanCharacter()">Generate Human</button>          
+                    </div>
+                    <div id="completeBackgroundDisplay"></div>
+                    <div id="completePersonalityDisplay"></div>
+                    <div id="completeReligionDisplay"></div>
+                    <div id="completeAgeDisplay"></div>
+                    <div id="completeBuildDisplay"></div>
+                    <div id="completeAppearanceDisplay"></div>
+                </div>
+                <div class="col-sm-4">
+                    <!-- Changling Creation-->
+                    <div>
+                        <button onclick="createCompleteChanglingCharacter()">Generate Changling</button>
+                        <div id="changlingBackgroundDisplay"></div>
+                        <div id="changlingPersonalityDisplay"></div>
+                        <div id="changlingTrueAgeDisplay"></div>
+                        <div id="changlingApparentAncestryDisplay"></div>
+                        <div id="changlingApparentGenderDisplay"></div>
+                        <div id="changlingQuirkDisplay"></div>
+                    </div>                    
+                </div>
+            </div>
         </div>
-        <div id="completeBackgroundDisplay"></div>
-        <div id="completePersonalityDisplay"></div>
-        <div id="completeReligionDisplay"></div>
-        <div id="completeAgeDisplay"></div>
-        <div id="completeBuildDisplay"></div>
-        <div id="completeAppearanceDisplay"></div>
 
         <!--For spacing-->
         <div><p></p></div>
-
-        <!-- Changling Creation-->
-        <div>
-            <button onclick="createCompleteChanglingCharacter()">Generate Changling</button>
-            <div id="changlingBackgroundDisplay"></div>
-            <div id="changlingPersonalityDisplay"></div>
-            <div id="changlingTrueAgeDisplay"></div>
-            <div id="changlingApparentAncestryDisplay"></div>
-            <div id="changlingApparentGenderDisplay"></div>
-            <div id="changlingQuirkDisplay"></div>
-        </div>
 
         <!--For spacing-->
         <div><p></p></div>

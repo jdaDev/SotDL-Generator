@@ -6,15 +6,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="jumbo">
         <h1>Shadow of the Demon Lord Character Generator</h1>
         <h2>Choose Ancestry</h2>
+        <select>
+            <option>Human</option>
+            <option>Changling</option>
+            <option>Clockwork</option>
+            <option>Dwarf</option>
+            <option>Goblin</option>
+            <option>Orc</option>
+            <option>Faun</option>
+            <option>Halfling</option>
+        </select>
+        </br>
+        </br>
+        <button onclick="createCompleteHumanCharacter()">Roll me up a character!</button>
     </div>
+
+    <article id="center-text">
+        <div id="completeBackgroundDisplay"></div>
+            <div id="completePersonalityDisplay"></div>
+            <div id="completeReligionDisplay"></div>
+            <div id="completeAgeDisplay"></div>
+            <div id="completeBuildDisplay"></div>
+            <div id="completeAppearanceDisplay">
+        </div>
+    </article>
 
     <!--Reset Button-->
     <div>
@@ -168,6 +192,12 @@
     <script type="text/javascript" src="JavaScript/orcs.js"></script>
     <script type="text/javascript" src="JavaScript/fauns.js"></script>
     <script type="text/javascript" src="JavaScript/halflings.js"></script>
+
+    <footer class="footer">
+        <p>Created by Jesse Alexander</p>
+        <p>Shadow of the Demon Lord and their logos are trademarks of Schwalb Entertainment LLC in the United States and other countries.</p>
+        <p>This website is not affiliated with, endorsed, sponsered, or specifically approved by Schwalb Entertainment LLC.</p>
+    </footer>
 </body>
 
 </html>

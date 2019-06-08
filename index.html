@@ -15,19 +15,19 @@
     <div class="jumbotron text-center" id="jumbo">
         <h1>Shadow of the Demon Lord Character Generator</h1>
         <h2>Choose Ancestry</h2>
-        <select>
-            <option>Human</option>
-            <option>Changling</option>
-            <option>Clockwork</option>
-            <option>Dwarf</option>
-            <option>Goblin</option>
-            <option>Orc</option>
-            <option>Faun</option>
-            <option>Halfling</option>
+        <select id="ancestry">
+            <option value="human">Human</option>
+            <option value="changling">Changling</option>
+            <option value="clockwork">Clockwork</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="goblin">Goblin</option>
+            <option value="orc">Orc</option>
+            <option value="faun">Faun</option>
+            <option value="halfling">Halfling</option>
         </select>
         </br>
         </br>
-        <button onclick="createCompleteHumanCharacter()">Roll me up a character!</button>
+        <button onclick="rollCharacter()">Roll me up a character!</button>
     </div>
 
     <article id="center-text">
@@ -41,9 +41,12 @@
     </article>
 
     <!--Reset Button-->
-    <div>
+    <!--
+        <div>
         <button onclick="resetPage()">Reset</button>
-    </div>
+        </div> 
+    -->
+    
 
     <!--For spacing-->
     <div>

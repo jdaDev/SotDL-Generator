@@ -153,37 +153,37 @@ function getHumanBackground()
     // TO-DO -> Add if statements checking which ancestry is selected, then
     // do the following for the appropriate array and length.
     var randomNumber = Math.floor(Math.random() * (humanBackgrounds.length));
-    document.getElementById('completeBackgroundDisplay').innerHTML = humanBackgrounds[randomNumber];
+    document.getElementById('humanBackgroundDisplay').innerHTML = humanBackgrounds[randomNumber];
 }
 
 function getHumanPersonality()
 {
     var randomNumber = Math.floor(Math.random() * (humanPersonalities.length));
-    document.getElementById('completePersonalityDisplay').innerHTML = humanPersonalities[randomNumber];
+    document.getElementById('humanPersonalityDisplay').innerHTML = humanPersonalities[randomNumber];
 }
 
 function getHumanReligion()
 {
     var randomNumber = Math.floor(Math.random() * (humanReligions.length));
-    document.getElementById('completeReligionDisplay').innerHTML = humanReligions[randomNumber];
+    document.getElementById('humanReligionDisplay').innerHTML = humanReligions[randomNumber];
 }
 
 function getHumanAge()
 {
     var randomNumber = Math.floor(Math.random() * (humanAges.length));
-    document.getElementById('completeAgeDisplay').innerHTML = humanAges[randomNumber];
+    document.getElementById('humanAgeDisplay').innerHTML = humanAges[randomNumber];
 }
 
 function getHumanBuild()
 {
     var randomNumber = Math.floor(Math.random() * (humanBuilds.length));
-    document.getElementById('completeBuildDisplay').innerHTML = humanBuilds[randomNumber];
+    document.getElementById('humanBuildDisplay').innerHTML = humanBuilds[randomNumber];
 }
 
 function getHumanAppearance()
 {
     var randomNumber = Math.floor(Math.random() * (humanAppearances.length));
-    document.getElementById('completeAppearanceDisplay').innerHTML = humanAppearances[randomNumber];
+    document.getElementById('humanAppearanceDisplay').innerHTML = humanAppearances[randomNumber];
 }
 
 /**

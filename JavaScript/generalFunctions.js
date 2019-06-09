@@ -16,23 +16,77 @@ function rollCharacter(){
     var e = document.getElementById("ancestry");
     var selectedAncestry = e.value;
 
+    /* Clear page. Clear all ancestry paragraphs. This is not efficient code,
+       but it gets the job done for now. */
+    // human
+    clearBox("humanBackgroundDisplay");
+    clearBox("humanPersonalityDisplay");
+    clearBox("humanReligionDisplay");
+    clearBox("humanAgeDisplay");
+    clearBox("humanBuildDisplay");
+    clearBox("humanAppearanceDisplay");
+
+    // changling
+    clearBox("changlingBackgroundDisplay");
+    clearBox("changlingPersonalityDisplay");
+    clearBox("changlingTrueAgeDisplay");
+    clearBox("changlingApparentAncestryDisplay");
+    clearBox("changlingApparentGenderDisplay");
+    clearBox("changlingQuirkDisplay");
+
+    // clockwork
+    clearBox("clockworkAgeDisplay");
+    clearBox("clockworkPurposeDisplay");
+    clearBox("clockworkFormDisplay");
+    clearBox("clockworkAppearanceDisplay");
+    clearBox("clockworkBackgroundDisplay");
+    clearBox("clockworkPersonalityDisplay");
+
+    // dwarf
+    clearBox("changlingBackgroundDisplay");
+    clearBox("changlingPersonalityDisplay");
+    clearBox("changlingTrueAgeDisplay");
+    clearBox("changlingApparentAncestryDisplay");
+    clearBox("changlingApparentGenderDisplay");
+    clearBox("changlingQuirkDisplay");
+
+    // goblin
+    clearBox("changlingBackgroundDisplay");
+    clearBox("changlingPersonalityDisplay");
+    clearBox("changlingTrueAgeDisplay");
+    clearBox("changlingApparentAncestryDisplay");
+    clearBox("changlingApparentGenderDisplay");
+    clearBox("changlingQuirkDisplay");
+
+    // orc
+    clearBox("changlingBackgroundDisplay");
+    clearBox("changlingPersonalityDisplay");
+    clearBox("changlingTrueAgeDisplay");
+    clearBox("changlingApparentAncestryDisplay");
+    clearBox("changlingApparentGenderDisplay");
+    clearBox("changlingQuirkDisplay");
+
+    // faun
+    clearBox("changlingBackgroundDisplay");
+    clearBox("changlingPersonalityDisplay");
+    clearBox("changlingTrueAgeDisplay");
+    clearBox("changlingApparentAncestryDisplay");
+    clearBox("changlingApparentGenderDisplay");
+    clearBox("changlingQuirkDisplay");
+
+    // halfling
+    clearBox("changlingBackgroundDisplay");
+    clearBox("changlingPersonalityDisplay");
+    clearBox("changlingTrueAgeDisplay");
+    clearBox("changlingApparentAncestryDisplay");
+    clearBox("changlingApparentGenderDisplay");
+    clearBox("changlingQuirkDisplay");
+
     // if changling is selected, clear text and create character.
     if(selectedAncestry == "changling"){
-        clearBox("completeBackgroundDisplay");
-        clearBox("completePersonalityDisplay");
-        clearBox("completeReligionDisplay");
-        clearBox("completeAgeDisplay");
-        clearBox("completeBuildDisplay");
-        clearBox("completeAppearanceDisplay");
         createCompleteChanglingCharacter(); 
     }
     else if(selectedAncestry == "human"){
-        clearBox("changlingBackgroundDisplay");
-        clearBox("changlingPersonalityDisplay");
-        clearBox("changlingTrueAgeDisplay");
-        clearBox("changlingApparentAncestryDisplay");
-        clearBox("changlingApparentGenderDisplay");
-        clearBox("changlingQuirkDisplay");
         createCompleteHumanCharacter();
     }
     else if(selectedAncestry == "orc"){

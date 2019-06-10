@@ -30,22 +30,84 @@
         <button onclick="rollCharacter()">Roll me up a character!</button>
     </div>
 
-    <article id="human-text">
+    <article id="center-text">
+        <!-- Human -->
+        <section id="human-text">
             <p id="humanBackgroundDisplay"></p>
             <p id="humanPersonalityDisplay"></p>
             <p id="humanReligionDisplay"></p>
             <p id="humanAgeDisplay"></p>
             <p id="humanBuildDisplay"></p>
             <p id="humanAppearanceDisplay"></p>
-    </article>
+        </section>
 
-    <article id="changling-text">
+        <!-- Changling -->
+        <section id="changling-text">
             <p id="changlingBackgroundDisplay"></p>
             <p id="changlingPersonalityDisplay"></p>
             <p id="changlingTrueAgeDisplay"></p>
             <p id="changlingApparentAncestryDisplay"></p>
             <p id="changlingApparentGenderDisplay"></p>
             <p id="changlingQuirkDisplay"></p>
+        </section>
+
+        <!-- Clockwork -->
+        <section id="clockwork-text">
+            <p id="clockworkAgeDisplay"></p>
+            <p id="clockworkPurposeDisplay"></p>
+            <p id="clockworkFormDisplay"></p>
+            <p id="clockworkAppearanceDisplay"></p>
+            <p id="clockworkBackgroundDisplay"></p>
+            <p id="clockworkPersonalityDisplay"></p>
+        </section>
+
+        <!-- Dwarf -->
+        <section id="dwarf-text">
+            <p id="dwarfAgeDisplay"></p>
+            <p id="dwarfBuildDisplay"></p>
+            <p id="dwarfAppearanceDisplay"></p>
+            <p id="dwarfHatredDisplay"></p>
+            <p id="dwarfBackgroundDisplay"></p>
+            <p id="dwarfPersonalityDisplay"></p>
+        </section>
+
+        <!-- Goblin -->
+        <section id="goblin-text">
+            <p id="goblinBackgroundDisplay"></p>
+            <p id="goblinPersonalityDisplay"></p>
+            <p id="goblinOddHabitDisplay"></p>
+            <p id="goblinAgeDisplay"></p>
+            <p id="goblinBuildDisplay"></p>
+            <p id="goblinDistinctiveAppearanceDisplay"></p>
+        </section>
+
+        <!-- Faun -->
+        <section id="faun-text">
+            <p id="faunAgeDisplay"></p>
+            <p id="faunBuildDisplay"></p>
+            <p id="faunAppearanceDisplay"></p>
+            <p id="faunBackgroundDisplay"></p>
+            <p id="faunPersonalityDisplay"></p>
+        </section>
+
+        <!-- Orc -->
+        <section id="orc-text">
+            <p id="orcAgeDisplay"></p>
+            <p id="orcBuildDisplay"></p>
+            <p id="orcAppearanceDisplay"></p>
+            <p id="orcBackgroundDisplay"></p>
+            <p id="orcPersonalityDisplay"></p>
+        </section>
+
+        <!-- Halfling -->
+        <section id="halfling-text">
+            <p id="halflingAgeDisplay"></p>
+            <p id="halflingBuildDisplay"></p>
+            <p id="halflingAppearanceDisplay"></p>
+            <p id="halflingBackgroundDisplay"></p>
+            <p id="halflingReligionDisplay"></p>
+            <p id="halflingPersonalityDisplay"></p>
+        </section>
     </article>
 
     <!--Reset Button-->
@@ -55,144 +117,6 @@
         </div> 
     -->
     
-
-    <!--For spacing-->
-    <div>
-        <p></p>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <!-- Human Creation-->
-                <div>
-                    <button onclick="createCompleteHumanCharacter()">Generate Human</button>
-                </div>
-                <div id="completeBackgroundDisplay"></div>
-                <div id="completePersonalityDisplay"></div>
-                <div id="completeReligionDisplay"></div>
-                <div id="completeAgeDisplay"></div>
-                <div id="completeBuildDisplay"></div>
-                <div id="completeAppearanceDisplay"></div>
-            </div>
-            <div class="col-sm-4">
-                <!-- Changling Creation-->
-                <div>
-                    <button onclick="createCompleteChanglingCharacter()">Generate Changling</button>
-                    <div id="changlingBackgroundDisplay"></div>
-                    <div id="changlingPersonalityDisplay"></div>
-                    <div id="changlingTrueAgeDisplay"></div>
-                    <div id="changlingApparentAncestryDisplay"></div>
-                    <div id="changlingApparentGenderDisplay"></div>
-                    <div id="changlingQuirkDisplay"></div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <!-- Clockwork Creation-->
-                <div>
-                    <button onclick="createCompleteClockworkCharacter()">Generate Clockwork</button>
-                    <div id="clockworkAgeDisplay"></div>
-                    <div id="clockworkPurposeDisplay"></div>
-                    <div id="clockworkFormDisplay"></div>
-                    <div id="clockworkAppearanceDisplay"></div>
-                    <div id="clockworkBackgroundDisplay"></div>
-                    <div id="clockworkPersonalityDisplay"></div>
-                </div>
-            </div>
-        </div>
-
-        <!--For spacing-->
-        <div>
-            <p></p>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4">
-                <!-- Dwarf Creation-->
-                <div>
-                    <button onclick="createCompleteDwarfCharacter()">Generate Dwarf</button>
-                    <div id="dwarfAgeDisplay"></div>
-                    <div id="dwarfBuildDisplay"></div>
-                    <div id="dwarfAppearanceDisplay"></div>
-                    <div id="dwarfHatredDisplay"></div>
-                    <div id="dwarfBackgroundDisplay"></div>
-                    <div id="dwarfPersonalityDisplay"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--For spacing-->
-    <div>
-        <p></p>
-    </div>
-
-    <!--For spacing-->
-    <div>
-        <p></p>
-    </div>
-
-    <!--For spacing-->
-    <div>
-        <p></p>
-    </div>
-
-    <!-- Goblin Creation-->
-    <div>
-        <button onclick="createCompleteGoblinCharacter()">Generate Goblin</button>
-        <div id="goblinAgeDisplay"></div>
-        <div id="goblinBuildDisplay"></div>
-        <div id="goblinDistinctiveAppearanceDisplay"></div>
-        <div id="goblinOddHabitDisplay"></div>
-        <div id="goblinBackgroundDisplay"></div>
-        <div id="goblinPersonalityDisplay"></div>
-    </div>
-
-    <!--For spacing-->
-    <div>
-        <p></p>
-    </div>
-
-    <!-- Orc Creation-->
-    <div>
-        <button onclick="createCompleteOrcCharacter()">Generate Orc</button>
-        <div id="orcAgeDisplay"></div>
-        <div id="orcBuildDisplay"></div>
-        <div id="orcAppearanceDisplay"></div>
-        <div id="orcBackgroundDisplay"></div>
-        <div id="orcPersonalityDisplay"></div>
-    </div>
-
-    <!--For spacing-->
-    <div>
-        <p></p>
-    </div>
-
-    <!-- Faun Creation-->
-    <div>
-        <button onclick="createCompleteFaunCharacter()">Generate Faun</button>
-        <div id="faunAgeDisplay"></div>
-        <div id="faunBuildDisplay"></div>
-        <div id="faunAppearanceDisplay"></div>
-        <div id="faunBackgroundDisplay"></div>
-        <div id="faunPersonalityDisplay"></div>
-    </div>
-
-    <!--For spacing-->
-    <div>
-        <p></p>
-    </div>
-
-    <!-- Halfling Creation-->
-    <div>
-        <button onclick="createCompleteHalflingCharacter()">Generate Halfling</button>
-        <div id="halflingAgeDisplay"></div>
-        <div id="halflingBuildDisplay"></div>
-        <div id="halflingAppearanceDisplay"></div>
-        <div id="halflingBackgroundDisplay"></div>
-        <div id="halflingReligionDisplay"></div>
-        <div id="halflingPersonalityDisplay"></div>
-    </div>
 
     <script type="text/javascript" src="JavaScript/generalFunctions.js"></script>
     <script type="text/javascript" src="JavaScript/javascript.js"></script>

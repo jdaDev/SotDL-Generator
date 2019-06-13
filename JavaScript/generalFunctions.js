@@ -9,6 +9,45 @@ function clearBox(elementID)
     document.getElementById(elementID).innerHTML = "";
 }
 
+/**
+ * Function to simulate rolling a d6 die.
+ */
+function rolld6()
+{
+    var randomNumber = Math.floor(Math.random() * (6));
+    return randomNumber;
+}
+
+/**
+ * Function to simulate rolling 2d6 dice.
+ */
+function roll2d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    return firstRoll + secondRoll;
+}
+
+/**
+ * Function to simulate rolling 3d6 dice.
+ */
+function roll3d6()
+{
+    var firstRoll = rolld6();
+    var secondRoll = rolld6();
+    var thirdRoll = rolld6();
+    return firstRoll + secondRoll + thirdRoll;
+}
+
+/**
+ * Function to simulate rolling a d20 die.
+ */
+function rolld20()
+{
+    var randomNumber = Math.floor(Math.random() * (20));
+    return randomNumber;
+}
+
 // Depending on which ancestry is selected from drop-down menu,
 // this function will create the appropriate character with said ancestry.
 function rollCharacter(){

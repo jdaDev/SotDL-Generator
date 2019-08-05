@@ -151,6 +151,15 @@ var ferrenBackground =
     'You came into money. Start the game with 2d6 cp.'
 ]
 
+/**
+ * Ferren Stats
+ */
+
+var ferrenStrength = 9;
+var ferrenAgility = 11;
+var ferrenIntellect = 10;
+var ferrenWill = 9;
+
 
 /**
    * Ferren Functions

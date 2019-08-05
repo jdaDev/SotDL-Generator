@@ -157,3 +157,37 @@ function rollCharacter(){
         createCompleteFerrenCharacter();
     }
 }
+
+// Get stats depending on which Ancestry is selected
+function getStats(){
+    var e = document.getElementById("ancestry");
+    var selectedAncestry = e.value;
+
+    if(selectedAncestry == "changling"){
+        createCompleteChanglingCharacter(); 
+    }
+    else if(selectedAncestry == "human"){
+        createCompleteHumanCharacter();
+    }
+    else if(selectedAncestry == "orc"){
+        createCompleteOrcCharacter();
+    }
+    else if(selectedAncestry == "goblin"){
+        createCompleteGoblinCharacter();
+    }
+    else if(selectedAncestry == "faun"){
+        createCompleteFaunCharacter();
+    }
+    else if(selectedAncestry == "clockwork"){
+        createCompleteClockworkCharacter();
+    }
+    else if(selectedAncestry == "dwarf"){
+        createCompleteDwarfCharacter();
+    }
+    else if(selectedAncestry == "halfling"){
+        createCompleteHalflingCharacter();
+    }
+    else if(selectedAncestry == "ferren"){
+        document.getElementById("strength").innerHTML = ferrenStrength;
+    }
+}

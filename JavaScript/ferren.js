@@ -65,22 +65,22 @@ var ferrenHumanAppearance =
 
 var felineAppearance =
 [
-    'Mitted, locket, or harlequin',
-    'Solid',
-    'Solid',
-    'Bicolor',
-    'Bicolor',
-    'Bicolor',
-    'Tabby',
-    'Tabby',
-    'Tabby',
-    'Tabby',
-    'Tuxedo',
-    'Tuxedo',
-    'Tuxedo',
-    'Tortoiseshell',
-    'Tortoiseshell',
-    'Hairless'
+    'As a feline, you are mitted, locket, or harlequin.',
+    'As a feline, you are solid.',
+    'As a feline, you are solid.',
+    'As a feline, you are bicolor.',
+    'As a feline, you are bicolor.',
+    'As a feline, you are bicolor.',
+    'As a feline, you are tabby.',
+    'As a feline, you are tabby.',
+    'As a feline, you are tabby.',
+    'As a feline, you are tabby.',
+    'As a feline, you are tuxedo.',
+    'As a feline, you are tuxedo.',
+    'As a feline, you are tuxedo.',
+    'As a feline, you are tortoiseshell.',
+    'As a feline, you are tortoiseshell.',
+    'As a feline, you are hairless.'
 ]
 
 var ferrenMannerism =
@@ -150,3 +150,71 @@ var ferrenBackground =
     'Someone important owes you a big favor.',
     'You came into money. Start the game with 2d6 cp.'
 ]
+
+
+/**
+   * Ferren Functions
+   */
+  function getFerrenBackground()
+  {
+      // TO-DO -> Add if statements checking which ancestry is selected, then
+      // do the following for the appropriate array and length.
+      var randomNumber = Math.floor(Math.random() * (ferrenBackground.length));
+      document.getElementById('ferrenBackgroundDisplay').innerHTML = ferrenBackground[randomNumber];
+  }
+  
+  function getFerrenPersonality()
+  {
+      var randomNumber = Math.floor(Math.random() * (ferrenPersonality.length));
+      document.getElementById('ferrenPersonalityDisplay').innerHTML = ferrenPersonality[randomNumber];
+  }
+  
+  function getFerrenAge()
+  {
+      var randomNumber = Math.floor(Math.random() * (ferrenAge.length));
+      document.getElementById('ferrenAgeDisplay').innerHTML = ferrenAge[randomNumber];
+  }
+  
+  function getFerrenBuild()
+  {
+      var randomNumber = Math.floor(Math.random() * (ferrenBuild.length));
+      document.getElementById('ferrenBuildDisplay').innerHTML = ferrenBuild[randomNumber];
+  }
+  
+  function getFerrenHumanAppearance()
+  {
+      var randomNumber = Math.floor(Math.random() * (ferrenHumanAppearance.length));
+      document.getElementById('ferrenHumanAppearanceDisplay').innerHTML = ferrenHumanAppearance[randomNumber];
+  }
+  
+  function getFelineAppearance()
+  {
+      var randomNumber = Math.floor(Math.random() * (felineAppearance.length));
+      document.getElementById('felineAppearanceDisplay').innerHTML = felineAppearance[randomNumber];
+  }
+  
+  function getFerrenBackground()
+  {
+      var randomNumber = Math.floor(Math.random() * (ferrenBackground.length));
+      document.getElementById('ferrenBackgroundDisplay').innerHTML = ferrenBackground[randomNumber];
+  }
+  
+  function getFerrenMannerism()
+  {
+      var randomNumber = Math.floor(Math.random() * (ferrenMannerism.length));
+      document.getElementById('ferrenMannerismDisplay').innerHTML = ferrenMannerism[randomNumber];
+  }
+  
+  /**
+   * Function to create a complete character with the click of a button.
+   */
+  function createCompleteFerrenCharacter()
+  {
+      getFerrenAge();
+      getFerrenBuild();
+      getFerrenHumanAppearance();
+      getFelineAppearance();
+      getFerrenMannerism();
+      getFerrenPersonality();
+      getFerrenBackground();
+  }

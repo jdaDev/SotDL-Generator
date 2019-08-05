@@ -111,6 +111,15 @@ function rollCharacter(){
     clearBox("faunBackgroundDisplay");
     clearBox("faunPersonalityDisplay");
 
+    // ferren
+    clearBox("ferrenAgeDisplay");
+    clearBox("ferrenBuildDisplay");
+    clearBox("ferrenHumanAppearanceDisplay");
+    clearBox("felineAppearanceDisplay");
+    clearBox("ferrenMannerismDisplay");
+    clearBox("ferrenPersonalityDisplay");
+    clearBox("ferrenBackgroundDisplay");
+
     // halfling
     clearBox("halflingAgeDisplay");
     clearBox("halflingBuildDisplay");
@@ -143,5 +152,8 @@ function rollCharacter(){
     }
     else if(selectedAncestry == "halfling"){
         createCompleteHalflingCharacter();
+    }
+    else if(selectedAncestry == "ferren"){
+        createCompleteFerrenCharacter();
     }
 }

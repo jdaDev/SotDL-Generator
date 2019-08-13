@@ -159,7 +159,16 @@ var ferrenStrength = 9;
 var ferrenAgility = 11;
 var ferrenIntellect = 10;
 var ferrenWill = 9;
-
+var ferrenPerception = ferrenIntellect + 1;
+var ferrenDefense = ferrenAgility;
+var ferrenHealth = ferrenStrength;
+var ferrenHealingRate = Math.floor(ferrenHealth/4);
+var ferrenSize = 1;
+var ferrenSpeed = 10;
+var ferrenPower = 0;
+var ferrenDamage = 0;
+var ferrenInsanity = 0;
+var ferrenCorruption = 0;
 
 /**
    * Ferren Functions

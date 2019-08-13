@@ -164,7 +164,7 @@ function getStats(){
     var selectedAncestry = e.value;
 
     if(selectedAncestry == "changling"){
-        createCompleteChanglingCharacter(); 
+         
     }
     else if(selectedAncestry == "human"){
         createCompleteHumanCharacter();
@@ -188,6 +188,19 @@ function getStats(){
         createCompleteHalflingCharacter();
     }
     else if(selectedAncestry == "ferren"){
-        document.getElementById("strength").innerHTML = ferrenStrength;
+        document.getElementById('strength').innerHTML = ferrenStrength;
+        document.getElementById('agility').innerHTML = ferrenAgility;
+        document.getElementById('intellect').innerHTML = ferrenIntellect;
+        document.getElementById('will').innerHTML = ferrenWill;
+        document.getElementById('perception').innerHTML = ferrenPerception;
+        document.getElementById('defense').innerHTML = ferrenDefense;
+        document.getElementById('health').innerHTML = ferrenHealth;
+        document.getElementById('healingRate').innerHTML = ferrenHealingRate;
+        document.getElementById('size').innerHTML = ferrenSize;
+        document.getElementById('speed').innerHTML = ferrenSpeed;
+        document.getElementById('power').innerHTML = ferrenPower;
+        document.getElementById('damage').innerHTML = ferrenDamage;
+        document.getElementById('insanity').innerHTML = ferrenInsanity;
+        document.getElementById('corruption').innerHTML = ferrenCorruption;
     }
 }

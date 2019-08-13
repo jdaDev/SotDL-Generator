@@ -23,7 +23,7 @@
         </div>
     </nav>
     <div class="jumbotron text-center" id="jumbo">
-        <h1>Shadow of the Demon Lord Character Generator</h1>
+        <h1>Tools of the Demon Lord</h1>
         <h2>Choose Ancestry</h2>
         <select id="ancestry">
             <option value="changling">Changling</option>
@@ -38,7 +38,7 @@
         </select>
         </br>
         </br>
-        <button onclick="rollCharacter()">Roll up a character!</button>
+        <button onclick="rollCharacter(); getStats();">Roll up a character!</button>
     </div>
 
     <article id="center-text">
@@ -133,13 +133,20 @@
     </article>
     <aside class="aside aside-1">
         <p><strong>Stats</strong></p>
-        <p id="strength"> </p>
-        <p id="agility"></p>
-        <p id="intellect"></p>
-        <p id="will"></p>
-        <p id="perception"></p>
-        <p id="defense"></p>
-        <p id="health"></p>
+        <label>Strength /<p id="strength"></p></label>
+        <label>Agility /<p id="agility"></p></label>
+        <label>Intellect /<p id="intellect"></p></label>
+        <label>Will /<p id="will"></p></label>
+        <label>Perception /<p id="perception"></p></label>
+        <label>Defense /<p id="defense"></p></label>
+        <label>Health /<p id="health"></p></label>
+        <label>Healing Rate /<p id="healingRate"></p></label>
+        <label>Size /<p id="size"></p></label>
+        <label>Speed /<p id="speed"></p></label>
+        <label>Power /<p id="power"></p></label>
+        <label>Damage /<p id="damage"></p></label>
+        <label>Insanity /<p id="insanity"></p></label>
+        <label>Corruption /<p id="corruption"></p></label>
     </aside>
     <aside class="aside aside-2"><strong>Languages and Professions</strong></aside>
     <aside class="aside aside-3"><strong>Equipment</strong></aside>

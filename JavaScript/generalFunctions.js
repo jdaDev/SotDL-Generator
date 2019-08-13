@@ -164,28 +164,132 @@ function getStats(){
     var selectedAncestry = e.value;
 
     if(selectedAncestry == "changling"){
-         
+        document.getElementById('strength').innerHTML = changlingStrength;
+        document.getElementById('agility').innerHTML = changlingAgility;
+        document.getElementById('intellect').innerHTML = changlingIntellect;
+        document.getElementById('will').innerHTML = changlingWill;
+        document.getElementById('perception').innerHTML = changlingPerception;
+        document.getElementById('defense').innerHTML = changlingDefense;
+        document.getElementById('health').innerHTML = changlingHealth;
+        document.getElementById('healingRate').innerHTML = changlingHealingRate;
+        document.getElementById('size').innerHTML = changlingSize;
+        document.getElementById('speed').innerHTML = changlingSpeed;
+        document.getElementById('power').innerHTML = changlingPower;
+        document.getElementById('damage').innerHTML = changlingDamage;
+        document.getElementById('insanity').innerHTML = changlingInsanity;
+        document.getElementById('corruption').innerHTML = changlingCorruption;
     }
     else if(selectedAncestry == "human"){
-        createCompleteHumanCharacter();
+        document.getElementById('strength').innerHTML = humanStrength;
+        document.getElementById('agility').innerHTML = humanAgility;
+        document.getElementById('intellect').innerHTML = humanIntellect;
+        document.getElementById('will').innerHTML = humanWill;
+        document.getElementById('perception').innerHTML = humanPerception;
+        document.getElementById('defense').innerHTML = humanDefense;
+        document.getElementById('health').innerHTML = humanHealth;
+        document.getElementById('healingRate').innerHTML = humanHealingRate;
+        document.getElementById('size').innerHTML = humanSize;
+        document.getElementById('speed').innerHTML = humanSpeed;
+        document.getElementById('power').innerHTML = humanPower;
+        document.getElementById('damage').innerHTML = humanDamage;
+        document.getElementById('insanity').innerHTML = humanInsanity;
+        document.getElementById('corruption').innerHTML = humanCorruption;
     }
     else if(selectedAncestry == "orc"){
-        createCompleteOrcCharacter();
+        document.getElementById('strength').innerHTML = orcStrength;
+        document.getElementById('agility').innerHTML = orcAgility;
+        document.getElementById('intellect').innerHTML = orcIntellect;
+        document.getElementById('will').innerHTML = orcWill;
+        document.getElementById('perception').innerHTML = orcPerception;
+        document.getElementById('defense').innerHTML = orcDefense;
+        document.getElementById('health').innerHTML = orcHealth;
+        document.getElementById('healingRate').innerHTML = orcHealingRate;
+        document.getElementById('size').innerHTML = orcSize;
+        document.getElementById('speed').innerHTML = orcSpeed;
+        document.getElementById('power').innerHTML = orcPower;
+        document.getElementById('damage').innerHTML = orcDamage;
+        document.getElementById('insanity').innerHTML = orcInsanity;
+        document.getElementById('corruption').innerHTML = orcCorruption;
     }
     else if(selectedAncestry == "goblin"){
-        createCompleteGoblinCharacter();
+        document.getElementById('strength').innerHTML = goblinStrength;
+        document.getElementById('agility').innerHTML = goblinAgility;
+        document.getElementById('intellect').innerHTML = goblinIntellect;
+        document.getElementById('will').innerHTML = goblinWill;
+        document.getElementById('perception').innerHTML = goblinPerception;
+        document.getElementById('defense').innerHTML = goblinDefense;
+        document.getElementById('health').innerHTML = goblinHealth;
+        document.getElementById('healingRate').innerHTML = goblinHealingRate;
+        document.getElementById('size').innerHTML = goblinSize;
+        document.getElementById('speed').innerHTML = goblinSpeed;
+        document.getElementById('power').innerHTML = goblinPower;
+        document.getElementById('damage').innerHTML = goblinDamage;
+        document.getElementById('insanity').innerHTML = goblinInsanity;
+        document.getElementById('corruption').innerHTML = goblinCorruption;
     }
     else if(selectedAncestry == "faun"){
-        createCompleteFaunCharacter();
+        document.getElementById('strength').innerHTML = faunStrength;
+        document.getElementById('agility').innerHTML = faunAgility;
+        document.getElementById('intellect').innerHTML = faunIntellect;
+        document.getElementById('will').innerHTML = faunWill;
+        document.getElementById('perception').innerHTML = faunPerception;
+        document.getElementById('defense').innerHTML = faunDefense;
+        document.getElementById('health').innerHTML = faunHealth;
+        document.getElementById('healingRate').innerHTML = faunHealingRate;
+        document.getElementById('size').innerHTML = faunSize;
+        document.getElementById('speed').innerHTML = faunSpeed;
+        document.getElementById('power').innerHTML = faunPower;
+        document.getElementById('damage').innerHTML = faunDamage;
+        document.getElementById('insanity').innerHTML = faunInsanity;
+        document.getElementById('corruption').innerHTML = faunCorruption;
     }
     else if(selectedAncestry == "clockwork"){
-        createCompleteClockworkCharacter();
+        document.getElementById('strength').innerHTML = clockworkStrength;
+        document.getElementById('agility').innerHTML = clockworkAgility;
+        document.getElementById('intellect').innerHTML = clockworkIntellect;
+        document.getElementById('will').innerHTML = clockworkWill;
+        document.getElementById('perception').innerHTML = clockworkPerception;
+        document.getElementById('defense').innerHTML = clockworkDefense;
+        document.getElementById('health').innerHTML = clockworkHealth;
+        document.getElementById('healingRate').innerHTML = clockworkHealingRate;
+        document.getElementById('size').innerHTML = clockworkSize;
+        document.getElementById('speed').innerHTML = clockworkSpeed;
+        document.getElementById('power').innerHTML = clockworkPower;
+        document.getElementById('damage').innerHTML = clockworkDamage;
+        document.getElementById('insanity').innerHTML = clockworkInsanity;
+        document.getElementById('corruption').innerHTML = clockworkCorruption;
     }
     else if(selectedAncestry == "dwarf"){
-        createCompleteDwarfCharacter();
+        document.getElementById('strength').innerHTML = dwarfStrength;
+        document.getElementById('agility').innerHTML = dwarfAgility;
+        document.getElementById('intellect').innerHTML = dwarfIntellect;
+        document.getElementById('will').innerHTML = dwarfWill;
+        document.getElementById('perception').innerHTML = dwarfPerception;
+        document.getElementById('defense').innerHTML = dwarfDefense;
+        document.getElementById('health').innerHTML = dwarfHealth;
+        document.getElementById('healingRate').innerHTML = dwarfHealingRate;
+        document.getElementById('size').innerHTML = dwarfSize;
+        document.getElementById('speed').innerHTML = dwarfSpeed;
+        document.getElementById('power').innerHTML = dwarfPower;
+        document.getElementById('damage').innerHTML = dwarfDamage;
+        document.getElementById('insanity').innerHTML = dwarfInsanity;
+        document.getElementById('corruption').innerHTML = dwarfCorruption;
     }
     else if(selectedAncestry == "halfling"){
-        createCompleteHalflingCharacter();
+        document.getElementById('strength').innerHTML = halflingStrength;
+        document.getElementById('agility').innerHTML = halflingAgility;
+        document.getElementById('intellect').innerHTML = halflingIntellect;
+        document.getElementById('will').innerHTML = halflingWill;
+        document.getElementById('perception').innerHTML = halflingPerception;
+        document.getElementById('defense').innerHTML = halflingDefense;
+        document.getElementById('health').innerHTML = halflingHealth;
+        document.getElementById('healingRate').innerHTML = halflingHealingRate;
+        document.getElementById('size').innerHTML = halflingSize;
+        document.getElementById('speed').innerHTML = halflingSpeed;
+        document.getElementById('power').innerHTML = halflingPower;
+        document.getElementById('damage').innerHTML = halflingDamage;
+        document.getElementById('insanity').innerHTML = halflingInsanity;
+        document.getElementById('corruption').innerHTML = halflingCorruption;
     }
     else if(selectedAncestry == "ferren"){
         document.getElementById('strength').innerHTML = ferrenStrength;

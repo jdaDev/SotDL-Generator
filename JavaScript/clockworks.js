@@ -135,6 +135,24 @@ var clockworkPurpose =
     'Your maker gave you three commandments and you must obey them.'
   ]
 
+/**
+  * Clockwork Stats
+  */
+ var clockworkStrength = 9;
+ var clockworkAgility = 8;
+ var clockworkIntellect = 9;
+ var clockworkWill = 9;
+ var clockworkPerception = clockworkIntellect;
+ var clockworkDefense = 13;
+ var clockworkHealth = clockworkStrength;
+ var clockworkHealingRate = Math.floor(clockworkHealth / 4);
+ var clockworkSize = 1;
+ var clockworkSpeed = 8;
+ var clockworkPower = 0;
+ var clockworkDamage = 0;
+ var clockworkInsanity = 0;
+ var clockworkCorruption = 0;
+
 
 /**
 * Clockwork Functions

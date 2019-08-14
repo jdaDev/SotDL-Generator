@@ -103,6 +103,25 @@ var faunAge = [
   ]
 
 /**
+  * Faun Stats
+  */
+ var faunStrength = 10;
+ var faunAgility = 11;
+ var faunIntellect = 11;
+ var faunWill = 9;
+ var faunPerception = faunIntellect + 1;
+ var faunDefense = faunAgility;
+ var faunHealth = faunStrength;
+ var faunHealingRate = Math.floor(faunHealth / 4);
+ var faunSize = '1/2 or 1';
+ var faunSpeed = 12;
+ var faunPower = 0;
+ var faunDamage = 0;
+ var faunInsanity = 0;
+ var faunCorruption = 0;
+
+
+/**
 * Faun Functions
 */
 function getFaunAge()

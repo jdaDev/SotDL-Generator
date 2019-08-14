@@ -105,6 +105,24 @@ var orcAge = [
   ]
 
 /**
+  * Orc Stats
+  */
+ var orcStrength = 11;
+ var orcAgility = 10;
+ var orcIntellect = 9;
+ var orcWill = 9;
+ var orcPerception = orcIntellect + 1;
+ var orcDefense = orcAgility;
+ var orcHealth = orcStrength;
+ var orcHealingRate = Math.floor(orcHealth / 4);
+ var orcSize = 1;
+ var orcSpeed = 12;
+ var orcPower = 0;
+ var orcDamage = 0;
+ var orcInsanity = 0;
+ var orcCorruption = 1; 
+
+/**
 * Orc Functions
 */
 function getOrcAge()

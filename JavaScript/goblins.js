@@ -128,6 +128,26 @@ var goblinAge = [
     'You hope to redeem your people in the eyes of the Faerie Queen.'
   ]
 
+
+/**
+  * Goblin Stats
+  */
+ var goblinStrength = 8;
+ var goblinAgility = 12;
+ var goblinIntellect = 10;
+ var goblinWill = 9;
+ var goblinPerception = goblinIntellect + 1;
+ var goblinDefense = goblinAgility;
+ var goblinHealth = goblinStrength;
+ var goblinHealingRate = Math.floor(goblinHealth / 4);
+ var goblinSize = 1/2;
+ var goblinSpeed = 10;
+ var goblinPower = 0;
+ var goblinDamage = 0;
+ var goblinInsanity = 0;
+ var goblinCorruption = 0;  
+
+
 /**
  * Functions for complete Goblin character
  */

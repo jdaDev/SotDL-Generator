@@ -125,9 +125,27 @@ var changlingTrueAge =
   ]
 
 
-  /**
-   * Changling Functions
-   */
+/**
+  * Changling Stats
+  */
+var changlingStrength = 9;
+var changlingAgility = 10;
+var changlingIntellect = 10;
+var changlingWill = 10;
+var changlingPerception = changlingIntellect + 1;
+var changlingDefense = changlingAgility;
+var changlingHealth = changlingStrength;
+var changlingHealingRate = Math.floor(changlingHealth / 4);
+var changlingSize = 1;
+var changlingSpeed = 10;
+var changlingPower = 0;
+var changlingDamage = 0;
+var changlingInsanity = 0;
+var changlingCorruption = 0;
+
+/**
+ * Changling Functions
+ */
 function getChanglingBackground()
 {
     // TO-DO -> Add if statements checking which ancestry is selected, then

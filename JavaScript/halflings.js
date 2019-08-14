@@ -120,6 +120,24 @@ var halflingAge = [
     'You are concerned about what others think of you and alter your behavior to make others like you.'
   ]
 
+/**
+  * Halfling Stats
+  */
+ var halflingStrength = 9;
+ var halflingAgility = 11;
+ var halflingIntellect = 10;
+ var halflingWill = 11;
+ var halflingPerception = halflingIntellect;
+ var halflingDefense = halflingAgility;
+ var halflingHealth = halflingStrength;
+ var halflingHealingRate = Math.floor(halflingHealth / 4);
+ var halflingSize = 1/2;
+ var halflingSpeed = 8;
+ var halflingPower = 0;
+ var halflingDamage = 0;
+ var halflingInsanity = 0;
+ var halflingCorruption = 0;  
+  
 
 /**
 * Halfling Functions

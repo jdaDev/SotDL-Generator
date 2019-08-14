@@ -126,6 +126,24 @@ var dwarfAge = [
     'You have little use for the customs of your people. It\'s time to move past the dusty caves and seek out fortunes elsewhere.'
   ]
 
+/**
+  * Dwarf Stats
+  */
+ var dwarfStrength = 10;
+ var dwarfAgility = 9;
+ var dwarfIntellect = 10;
+ var dwarfWill = 10;
+ var dwarfPerception = dwarfIntellect + 1;
+ var dwarfDefense = dwarfAgility;
+ var dwarfHealth = dwarfStrength + 4;
+ var dwarfHealingRate = Math.floor(dwarfHealth / 4);
+ var dwarfSize = 1/2;
+ var dwarfSpeed = 8;
+ var dwarfPower = 0;
+ var dwarfDamage = 0;
+ var dwarfInsanity = 0;
+ var dwarfCorruption = 0;
+
 
 /**
 * Dwarf Functions

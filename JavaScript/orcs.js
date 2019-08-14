@@ -120,7 +120,9 @@ var orcAge = [
  var orcPower = 0;
  var orcDamage = 0;
  var orcInsanity = 0;
- var orcCorruption = 1; 
+ var orcCorruption = 1;
+
+ var orcLanguages = 'You speak the Common Tongue and Dark Speech.'
 
 /**
 * Orc Functions

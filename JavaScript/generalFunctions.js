@@ -308,3 +308,38 @@ function getStats(){
         document.getElementById('corruption').innerHTML = ferrenCorruption;
     }
 }
+
+function getLanguages(){
+    // Maybe use getElementByClassName???
+    var e = document.getElementById("ancestry");
+    var selectedAncestry = e.value;
+
+    // if changling is selected, clear text and create character.
+    if(selectedAncestry == "changling"){
+        document.getElementById('languages').innerHTML = changlingLanguages; 
+    }
+    else if(selectedAncestry == "human"){
+        document.getElementById('languages').innerHTML = humanLanguages;
+    }
+    else if(selectedAncestry == "orc"){
+        document.getElementById('languages').innerHTML = orcLanguages;
+    }
+    else if(selectedAncestry == "goblin"){
+        document.getElementById('languages').innerHTML = changlingLanguages;
+    }
+    else if(selectedAncestry == "faun"){
+        document.getElementById('languages').innerHTML = faunLanguages;
+    }
+    else if(selectedAncestry == "clockwork"){
+        document.getElementById('languages').innerHTML = clockworkLanguages;
+    }
+    else if(selectedAncestry == "dwarf"){
+        document.getElementById('languages').innerHTML = dwarfLanguages;
+    }
+    else if(selectedAncestry == "halfling"){
+        document.getElementById('languages').innerHTML = halflingLanguages;
+    }
+    else if(selectedAncestry == "ferren"){
+        document.getElementById('languages').innerHTML = ferrenLanguages;
+    }
+}

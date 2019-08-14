@@ -143,6 +143,8 @@ var changlingDamage = 0;
 var changlingInsanity = 0;
 var changlingCorruption = 0;
 
+var changlingLanguages = 'You speak the Common Tongue.'
+
 /**
  * Changling Functions
  */
